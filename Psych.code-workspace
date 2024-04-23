@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Psych",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Psych"
+	}
+}

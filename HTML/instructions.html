@@ -1,0 +1,22 @@
+<body style = "font-size: 1vw">
+<h1>Because there are only three trials in this study, it is very important that you first read these directions.</h1>
+<ul style = "font-size: 2vw">
+    <li>On each trial you will see some images flicker on and off.</li>
+    <li>Keep watching these flashes until you can find the one image that is changing.</li>
+    <li>On each trial, there is only 1 changing item, and you will know it when you find it (the changes are pretty big).</li>
+    <li>But, they can be surprisingly tricky, so keep searching.</li>
+    <li>Once you are sure that you have found the changing item, PRESS THE SPACE BAR.</li>
+    <li>The picture will come back on and you then need to, CLICK THE PICTURE THAT WAS CHANGING.</li>
+    <li>Your data will only count if you click the changing item, so keep looking until you find it!</li>
+</ul>
+<br>
+<br>
+<div style = "border:0.3vw solid;  width: 15vw; height: 2vw; margin:auto; position:relative">Loading...
+<div id = "loadingbar", style = "background-color: gray; width: 15vw; height: 2vw; margin:auto; position:absolute; top: 0; z-index: -1"></div></div>
+<br>
+<center>
+    <button id = "but", style = "display: none" onclick = "document.getElementById('begintext').style.display = 'block'; setTimeout(function(){window.location.href = './test.html'}, 8000)">Click Here to Begin</button>
+    <h1 id = "begintext", style = "display:none">We are about to begin the first trial. Get ready to find the changing object.</h1>
+</center>
+<script src = "../JS/Loading.js"></script>
+</body>

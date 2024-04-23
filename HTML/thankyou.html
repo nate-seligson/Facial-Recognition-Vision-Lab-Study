@@ -1,0 +1,22 @@
+<script type = "module">
+    import {sendJSON} from "../Server/server.js";
+    function Send(){
+        var data = JSON.parse(sessionStorage.getItem("data"))
+        data["Time"]["Comment"] = document.getElementById("textinp").value
+        sendJSON(data);
+        document.getElementById("inputstuff").style.display = "none"
+        window.location.href = "" // insert prolific
+    }
+    document.getElementById("but").addEventListener("click", function(){Send()})
+</script>
+<center style = "font-size: 1vw">
+<h1>Thank you!</h1>
+<h2>Your data will help us better understand human memory limits and attention.</h2>
+<h2 id = "Recieve"></h2>
+<div id = "inputstuff", style= "margin-top:15vw; font-size: 1vw;">
+    <p>Please tell us if you had any problems with the test.</p>
+    <textarea type = "text", id = "textinp" rows = "4" cols = "40"style = "font-size: 1vw"></textarea>
+    <br>
+    <button id = "but" style = "font-size: 1vw">Submit</button>
+</div>
+</center>
