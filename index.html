@@ -1,11 +1,14 @@
 <center style = "font-size: 1vw;">
     <h1>Dear Participant,<br>
         This is a very brief experiment.<br>
-        Thank you for joining us.</h1>
-    <button style = "font-size: 1vw"onclick = "window.location.href = './HTML/userx.html'">click to continue</button>
+        Thank you for joining us.
+    <br><br>
+        Please use either Chrome or Safari to complete this test.
+    </h1>
+    <button id = "continuebutton", style = "font-size: 1vw; display:none;"onclick = "window.location.href = './HTML/userx.html'">click to continue</button>
     <script type = "module">
-        import {sendJSON} from "./Server/server.js"
-        sendJSON({"hi": "lauren"});
+        if(navigator.userAgent.indexOf("Chrome") != -1 || navigator.userAgent.indexOf("Safari") != -1){
+            document.getElementById("continuebutton").style.display = "block";
+        }
     </script>
-    <h2 id = "Recieve">NOPE!</h2>
 </center>
